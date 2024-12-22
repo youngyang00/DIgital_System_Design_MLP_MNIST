@@ -1,5 +1,4 @@
 # FPGA-Based MNIST Handwritten Digit Classification Accelerator Using MLP
-![MLP](https://github.com/user-attachments/assets/e6964174-bec4-47bf-b93e-2c5b42ebac57)
 
 ## Project Overview
 This project was undertaken as part of the **Digital System Design course** at Seoul National University of Science and Technology. The goal was to implement a Multi-Layer Perceptron (MLP) model provided by the IDSL research lab on the **FPGA Zynq-7000 z7-20 board**. The evaluation criteria included:
@@ -9,6 +8,7 @@ This project was undertaken as part of the **Digital System Design course** at S
 3. **Accuracy** close to the provided reference model implemented in C.
 
 ### MLP Model Structure
+![MLP](https://github.com/user-attachments/assets/e6964174-bec4-47bf-b93e-2c5b42ebac57)
 The implemented MLP model is structured as follows:
 - **Input Layer**: 
   - **784 nodes** (28x28 pixel MNIST images flattened into a 1D array).
