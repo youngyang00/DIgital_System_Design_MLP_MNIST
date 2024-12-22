@@ -1,0 +1,33 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 47877f89ee7641e59098d0229991100e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_top_mlp_behav xil_defaultlib.tb_top_mlp xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.MLP_Controller
+Compiling module xil_defaultlib.xilinx_simple_dual_port_1_clock_...
+Compiling module xil_defaultlib.multiplier_32x18
+Compiling module xil_defaultlib.Layer_part1_controller
+Compiling module xil_defaultlib.DSP(WIDTH_OP1=8,WIDTH_OP2=8,WIDT...
+Compiling module xil_defaultlib.xilinx_simple_dual_port_1_clock_...
+Compiling module xil_defaultlib.RMC_controller(WEIGHT_ROW=784,BR...
+Compiling module xil_defaultlib.PU_RowMatrix(OP1_COL=128,WEIGHT_...
+Compiling module xil_defaultlib.Layer_part1_buffer
+Compiling module xil_defaultlib.Layer_part1
+Compiling module xil_defaultlib.adder32
+Compiling module xil_defaultlib.Layer_part2_controller
+Compiling module xil_defaultlib.Layer_part2_buffer_32bit_port
+Compiling module xil_defaultlib.xilinx_simple_dual_port_1_clock_...
+Compiling module xil_defaultlib.RMC_controller(WEIGHT_ROW=128,BR...
+Compiling module xil_defaultlib.PU_RowMatrix(OP1_COL=32,WEIGHT_R...
+Compiling module xil_defaultlib.xilinx_simple_dual_port_1_clock_...
+Compiling module xil_defaultlib.PU_RowMatrix(OP1_COL=32,WEIGHT_R...
+Compiling module xil_defaultlib.Layer_part2
+Compiling module xil_defaultlib.ila_0
+Compiling module xil_defaultlib.top_mlp_sub
+Compiling module xil_defaultlib.tb_top_mlp
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_top_mlp_behav

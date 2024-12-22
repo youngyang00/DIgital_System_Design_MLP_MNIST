@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Aug  5 15:41:31 2024
+# Process ID: 18272
+# Current directory: C:/Users/sjh00/streamline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21600 C:\Users\sjh00\streamline\dsd_mlp.xpr
+# Log file: C:/Users/sjh00/streamline/vivado.log
+# Journal file: C:/Users/sjh00/streamline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/sjh00/streamline/dsd_mlp.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/sjh00/streamline/tb_pu_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_processing_system7_0_0
+design_1_smartconnect_0_0
+
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 922.133 ; gain = 37.902
+update_compile_order -fileset sources_1
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Netlist 29-17] Analyzing 794 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1986.500 ; gain = 3.262
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1986.500 ; gain = 3.262
+Generating merged BMM file for the design top 'design_1_wrapper'...
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1986.500 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 127 instances were transformed.
+  CFGLUT5 => CFGLUT5 (SRLC32E, SRL16E): 96 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 31 instances
+
+open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:20 . Memory (MB): peak = 2127.879 ; gain = 522.871
+open_report: Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 2234.250 ; gain = 92.293
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+report_utilization -name utilization_1
+open_bd_design {C:/Users/sjh00/streamline/dsd_mlp.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - axi_bram_ctrl_0_bram
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:module_ref:top_mlp:1.0 - top_mlp_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /top_mlp_0/done_intr_o(undef) and /processing_system7_0/IRQ_F2P(intr)
+Successfully read diagram <design_1> from BD file <C:/Users/sjh00/streamline/dsd_mlp.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2591.957 ; gain = 59.750

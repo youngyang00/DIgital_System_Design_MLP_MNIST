@@ -1,0 +1,34 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed May 29 09:22:39 2024
+# Process ID: 1992
+# Current directory: C:/streamline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11920 C:\streamline\dsd_mlp.xpr
+# Log file: C:/streamline/vivado.log
+# Journal file: C:/streamline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/streamline/dsd_mlp.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/streamline/tb_pu_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/../AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 778.215 ; gain = 207.293
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+[Wed May 29 09:24:24 2024] Launched impl_1...
+Run output will be captured here: C:/streamline/dsd_mlp.runs/impl_1/runme.log
+file mkdir C:/streamline/dsd_mlp.sdk
+file copy -force C:/streamline/dsd_mlp.runs/impl_1/design_1_wrapper.sysdef C:/streamline/dsd_mlp.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace C:/streamline/dsd_mlp.sdk -hwspec C:/streamline/dsd_mlp.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/streamline/dsd_mlp.sdk -hwspec C:/streamline/dsd_mlp.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed May 29 15:24:09 2024...

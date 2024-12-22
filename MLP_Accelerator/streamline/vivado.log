@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Aug 13 21:23:37 2024
+# Process ID: 14464
+# Current directory: C:/Users/sjh00/streamline
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23652 C:\Users\sjh00\streamline\dsd_mlp.xpr
+# Log file: C:/Users/sjh00/streamline/vivado.log
+# Journal file: C:/Users/sjh00/streamline\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/sjh00/streamline/dsd_mlp.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/sjh00/streamline/tb_pu_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] Board Part Repository Path: Could not find the directory 'C:/Users/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'design_1.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+design_1_processing_system7_0_0
+design_1_smartconnect_0_0
+
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 820.180 ; gain = 186.152
+update_compile_order -fileset sources_1
