@@ -92,5 +92,10 @@ The MLP accelerator consists of the following components:
     4. Controller optimization and FSM design.
 - Collaboration ensured successful project completion and seamless integration of components.
 
+## Cooperation
+-https://github.com/foodinsect
+
+-https://github.com/dlwnstlr1010
+
 ---
 This project demonstrates efficient FPGA-based hardware acceleration for MLP, showcasing its potential for low-power, high-performance AI applications.
