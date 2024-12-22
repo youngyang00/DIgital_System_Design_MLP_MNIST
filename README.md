@@ -1,4 +1,5 @@
 # FPGA-Based MNIST Handwritten Digit Classification Accelerator Using MLP
+![MLP](https://github.com/user-attachments/assets/e6964174-bec4-47bf-b93e-2c5b42ebac57)
 
 ## Project Overview
 This project was undertaken as part of the **Digital System Design course** at Seoul National University of Science and Technology. The goal was to implement a Multi-Layer Perceptron (MLP) model provided by the IDSL research lab on the **FPGA Zynq-7000 z7-20 board**. The evaluation criteria included:
@@ -21,7 +22,10 @@ The implemented MLP model is structured as follows:
 
 ## Accelerator Design
 The MLP accelerator consists of the following components:
+![Untitled](https://github.com/user-attachments/assets/43e39753-e94a-4e4c-ad95-495643ef2ab2)
 
+
+그림2. 가속기 RTL
 ### 1. BRAM (IMAGE_BRAM)
 - **Size**: 784 x 8-bit MNIST images, with a total **WIDTH** of 8 bits and **DEPTH** of 8192.
 - Used to store input data and weights efficiently for processing.
@@ -67,10 +71,14 @@ The MLP accelerator consists of the following components:
 - **Solution**: Reduced clock speed from **125 MHz to 100 MHz**, ensuring all timing constraints were met without significant performance degradation.
 
 ### Final Validation
+![Untitled (1)](https://github.com/user-attachments/assets/f15b576e-2b00-4b8a-93f2-5bb80cde56ae)
 - Verified results by transmitting computed values from FPGA to PC via UART.
 - Accuracy confirmed using MATLAB by comparing FPGA predictions with ground truth.
 
+
 ## Results
+![summary](https://github.com/user-attachments/assets/0c181ba4-7278-46cb-9842-c84e4fa62c1d)
+
 - **Accuracy**: Achieved 90% accuracy (correctly predicted 9 out of 10 test images).
 - **Resource Efficiency**: Optimized usage of DSPs, BRAM, and other FPGA resources.
 - **Performance**: Delivered real-time inference capability within resource constraints.
